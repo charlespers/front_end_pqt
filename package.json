@@ -1,37 +1,40 @@
 {
-  "name": "princeton-qt",
+  "name": "front_end_pqt",
   "homepage": "https://charlespers.github.io/PQT/",
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "",
-    "lint": "eslint .",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlespers/front_end_pqt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/charlespers/front_end_pqt/issues"
+  },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",  
+    "@emailjs/browser": "^4.4.1",
     "framer-motion": "^12.5.0",
     "gh-pages": "^6.3.0",
-    "prop-types": "^15.8.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.4.0",
     "react-tilt": "^1.0.2",
-    "react-vertical-timeline-component": "^3.6.0",
-    "tailwindcss": "^4.0.14"
+    "vite": "^6.2.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.21.0", 
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^15.15.0",
-    "vite": "^6.2.0"
+    "@vitejs/plugin-react": "^4.3.4"
   }
 }
