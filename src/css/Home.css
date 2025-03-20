@@ -1,0 +1,73 @@
+.home-background {                                   /* Ensures background covers full page */
+    top: 0;                                             /* Starts at top*/
+    left: 0;                                            /* Starts at top-left ^*/
+    width: 100vw;                                       /* 100% of width*/
+    min-height: 100vh;                                  /* 100% of height*/
+    background-color: black;                          /* Color*/
+    z-index: -1;                                        /* Pushes background behind all content */
+  }
+.home-hero {
+    width: 70vw;                                        /* Width Taking up*/
+    height: 60vh;                                       /* Height of the screen*/
+    background-size: cover;                             /* Makes sure it covers the box*/
+    background-position: center;                        /* Centers the image itselfn*/
+    background-repeat: no-repeat;                       /* Prevents Repeats*/
+    background-attachment: scroll;                      /* Fixes it onto place*/
+    margin: 50px auto;                                  /* Width and heigh padding*/
+    opacity: 0;                                         /* Starts out invisible*/
+    transform: translateY(30px);                        /* Slightly shifted down */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+.home-hero.visible {
+    opacity: 1;                                         /* End state of complete visability*/
+    transform: translateY(0);
+}
+.home-title {
+    text-align: center;                                 /* Centers all text elements */
+    margin-top: 50px;                                   /* Adjust to move the title down */
+    position: relative;
+}
+
+.home-title h1 {
+    font-size: 3rem;                                    /* Makes the text prop to the size of the root element */
+    color: #ffb500;                                   /* Orange text */
+    text-shadow: -2px -2px 0 black,  
+                  2px -2px 0 black,  
+                 -2px  2px 0 black,  
+                  2px  2px 0 black;                   /* Black outline */
+    font-weight: bold;
+    position: relative;
+}
+.home-title h1::before,
+.home-title h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, gold, transparent);
+    position: absolute;
+    left: 0;
+}
+
+
+.home-title h2 {
+    font-size: 2rem;                                    /* Adjust size as needed */
+    color: wheat;                                     /* Black text */
+    font-weight: bold;
+    position: relative;
+}
+
+.home-title h2::before,
+.home-title h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    position: absolute;
+    left: 0;
+}
+
+  
+    
+  

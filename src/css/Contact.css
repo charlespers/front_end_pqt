@@ -1,0 +1,149 @@
+/* General Layout */
+.contact-container {
+    width: 100vw;  /* Full viewport width */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a1f2b, #0d1117);
+    position: relative;
+    overflow-x: hidden; /* Prevent accidental horizontal scroll */
+}
+
+/* Ensuring no unwanted spacing */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Contact Section Layout */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;  /* Ensure full width */
+    max-width: 1400px; /* Keep content readable */
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    text-align: left;
+}
+
+.contact-info h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: gold;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: silver;
+    margin: 1rem 0;
+}
+
+.contact-info h3 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+/* Submit Button */
+.submit-button {
+    margin-top: 1rem;
+    background: orange;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: gold;
+    color: black;
+}
+
+/* Floating Home Button */
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: orange;
+    color: white;
+    padding: 10px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.home-button:hover {
+    background: gold;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+        width: 90vw; /* Avoid unnecessary cut-off */
+    }
+
+    .contact-form {
+        border-left: none;
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
+        margin-top: 2rem;
+    }
+}

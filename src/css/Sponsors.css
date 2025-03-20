@@ -1,0 +1,64 @@
+.sponsors {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #b46e2d;
+    color: black;
+}
+
+/* Sponsor Title */
+.sponsor-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Gold & Silver Tier Headers */
+.sponsor-tier h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+/* Gold Tier */
+.gold-tier h3 {
+    color: black;
+    background: gold;
+    border-radius: 5px;
+}
+
+/* Silver Tier */
+.silver-tier h3 {
+    color: black;
+    background: silver;
+    border-radius: 5px;
+}
+
+/* Fading Line Between Tiers */
+.divider {
+    width: 50%;
+    height: 3px;
+    margin: 2rem auto;
+    background: linear-gradient(to right, gold, transparent, silver);
+}
+
+/* Sponsor Logos - Now in a Grid */
+.sponsor-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Sponsor Images */
+.sponsor-logo {
+    width: 140px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.1);
+}
